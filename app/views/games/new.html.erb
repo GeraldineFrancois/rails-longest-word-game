@@ -1,0 +1,18 @@
+<%= @letter %>
+<ul class="d-inline-flex">
+<% @letters.each do |letter| %>
+  <li class="btn btn-primary m-2"> <%= letter %> </li>
+<% end %>
+</ul>
+<br>
+<br>
+
+
+<form>
+  <label for="word">What is the longest word you can find?</label>
+  <br>
+  <div class="d-inline-flex">
+    <input class="form-control" id="word">
+    <input class="btn btn-light" type="submit">
+  </div>
+</form>
